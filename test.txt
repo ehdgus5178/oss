@@ -1,0 +1,119 @@
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ echo hi > b.txt
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ echo hi > c.txt
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ echo hi > a.txt
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ cat aa.txt > hi
+cat: aa.txt: No such file or directory
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ cat hi > aa.txt
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git config --global user.email "hello.git.ehdgus5178@naver.com"
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git config --global user.name "ehdgus5178"
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git add *.txt
+warning: in the working copy of 'b.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'c.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git commit -m "24.03.13 commit"
+[master (root-commit) a11ef4f] 24.03.13 commit
+ 3 files changed, 3 insertions(+)
+ create mode 100644 a.txt
+ create mode 100644 b.txt
+ create mode 100644 c.txt
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ echo "*.txt는 .txt파일 전부 포함 이라는 뜻" >> *.txt
+bash: *.txt: ambiguous redirect
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ echo "*.txt는 .txt파일 전부 포함이라는 뜻 " >> ㅁ.ㅅㅌㅅ
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ echo " aa" >> a.txt
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git commit -m " 두번째 commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hi
+        "\343\205\201.\343\205\205\343\205\214\343\205\205"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git commit -m "두번째 commit "
+[master 37b2558] 두번째 commit
+ 1 file changed, 1 insertion(+)
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git log
+commit 37b2558e65edee5572244352b42b81acdd56e676 (HEAD -> master)
+Author: ehdgus5178 <hello.git.ehdgus5178@naver.com>
+Date:   Wed Mar 13 16:40:46 2024 +0900
+
+    두번째 commit
+
+commit a11ef4fe6d760b03576ececede26e219db5d6dc7
+Author: ehdgus5178 <hello.git.ehdgus5178@naver.com>
+Date:   Wed Mar 13 16:35:44 2024 +0900
+
+    24.03.13 commit
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$ git checkout a11ef4f
+Note: switching to 'a11ef4f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a11ef4f 24.03.13 commit
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 ((a11ef4f...))
+$ ^C
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 ((a11ef4f...))
+$ git checkout -
+Previous HEAD position was a11ef4f 24.03.13 commit
+Switched to branch 'master'
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (master)
+$
