@@ -1,0 +1,7 @@
+1. Sourcetree 다운로드 및 remote하기
+
+2. visual studio code다운 
+
+3. github원격저장소 생성
+
+4. 따로 gitbash는 안함

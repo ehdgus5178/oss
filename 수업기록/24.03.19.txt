@@ -1,0 +1,45 @@
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 ((17dd6b5...))
+$ git remote add origin https://github.com/ehdgus5178/oss.git
+error: remote origin already exists.
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 ((17dd6b5...))
+$ git branch -M main
+fatal: cannot rename the current branch while not on any
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 ((17dd6b5...))
+$ git checkout -b main
+Switched to a new branch 'main'
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (main)
+$ git branch -M main
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (main)
+$ git branch -M main
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/20227103 남동현 (main)
+$ git push -u origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 1023 bytes | 511.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ehdgus5178/oss.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/새 폴더
+$ git clone https://github.com/ehdgus5178/oss.git .
+Cloning into '.'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 0), reused 12 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+
+user@313-07 MINGW64 ~/Desktop/학과별 폴더/컴퓨터공학과/새 폴더 (main)
+$
+
+
+
