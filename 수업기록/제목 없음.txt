@@ -1,8 +1,0 @@
-1. 소스트리로 저장소 추가하기
-
-2. visual studio code로 index.html 파일생성
-
-3.remind.md 파일생성
-
-4. 소스트리로 커밋하기
-
